@@ -9,10 +9,7 @@ export default Vue.extend({
   methods: {
     onLoadUser() {
       this.$router.push(`/users/${this.userId}`)
-    },
-    validate (data: any) {
-      console.log(data);   
-      return true;   
     }
-  }
+  },
+  layout: 'users'
 });
